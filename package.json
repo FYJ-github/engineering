@@ -12,7 +12,8 @@
     "dev": "tsc --watch",
     "build": "npm run clean && tsc",
     "clean": "rimraf -rf dist",
-    "lint": "eslint src --ext .js,.ts --cache --fix"
+    "lint": "eslint src --ext .js,.ts --cache --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "rimraf": "^4.4.0",
     "typescript": "^4.9.5"
