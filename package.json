@@ -2,13 +2,16 @@
   "name": "engineering",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "scripts": {
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/FYJ-github/engineering/issues"
   },
-  "homepage": "https://github.com/FYJ-github/engineering#readme"
+  "homepage": "https://github.com/FYJ-github/engineering#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
