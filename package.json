@@ -11,7 +11,7 @@
    "scripts": {
     "dev": "tsc --watch",
     "build": "npm run clean && tsc",
-    "clean": "rm -rf dist"
+    "clean": "rimraf -rf dist"
   },
   "repository": {
     "type": "git",
