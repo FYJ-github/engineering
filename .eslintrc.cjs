@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["standard", "eslint-config-standard-with-typescript"],
+  extends: ['standard', 'eslint-config-standard-with-typescript', 'prettier'],
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -12,6 +12,8 @@ module.exports = {
     sourceType: "module",
     project: "./tsconfig.json",
   },
-  plugins: ["@typescript-eslint"],
-  rules: {},
+  plugins: ['@typescript-eslint', 'prettier'],
+    rules: {
+      'prettier/prettier': 'error'
+  },
 };
